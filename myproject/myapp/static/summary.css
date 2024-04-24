@@ -1,0 +1,44 @@
+/* summary.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    color: #333; /* Dark gray text */
+    margin-bottom: 30px;
+}
+
+/* Summary container styles */
+.summary-container {
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff; /* White text */
+    background-color: #007bff; /* Blue button color */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

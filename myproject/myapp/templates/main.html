@@ -1,0 +1,33 @@
+<!-- myapp/templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        #container {
+            display: flex;
+        }
+        #video {
+            width: 50%;
+        }
+        #data {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="{% url 'video-feed' %}" alt="Live Stream">
+        <div id="data">
+            <h1>Speed: {{ speed }} km/h</h1>
+            <h1>Distance: {{ distance }} meters</h1>
+        </div>
+    </div>
+</body>
+</html>

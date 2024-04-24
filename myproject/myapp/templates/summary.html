@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="{% static 'summary.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Summary</h1>
+        <div class="summary-container mt-4">
+            <h2>Distance Travelled: {{ distance }}</h2>
+            <h2>Average Speed: {{ average_speed }}</h2>
+            <h2>Time Taken: {{ time_taken }}</h2>
+            <h2>Object Received: {{ object_received }}</h2>
+            <a href="{% url 'logout' %}" class="btn btn-danger mt-3">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
